@@ -1,0 +1,54 @@
+=== What's new in version 0.4.4 ===
+
+
+Version 0.4.4 introduces the concept of named classes.
+
+
+Anonymous classes
+-----------------
+
+Until now, creating a class returns a class table, that the user stores in any variable.
+
+    local Object = require 'Oop.Object'
+    local Toto = Object:subclass()
+
+This is what I call an "anonymous class", because the class is not aware of its name.
+
+So if the user wants to keep track of the defined classes, he is responsible for maintaining the list and associating classes with symbols.
+
+
+Named classes
+-------------
+
+This release introduce the concept of "named class". A named class is a class that is aware of its name.
+
+    local Object = require 'Oop.Object'
+    local Trombone = Object:subclass 'Trombone'
+
+Now, the class 'Trombone' has a name accessible by the message ':name()'. So, when debugging, you can now print the name of any named class's instance.
+
+As a bonus, the Class class also keeps track of all named classes. Use Class:all() to retrieve a list of all named classes.
+
+Note: in most real usages, a class is described in its own file. Then, this file is required. So, in a class file ('SomePackage/SomeClass.lua')you can use the following declaration:
+
+
+    local Object = require 'Oop.Object'
+    local SomeClass = Object:subclass(...)
+    ---
+    return SomeClass
+
+and use it in another file with:
+
+    ----
+    local SomeClass = require 'SomePackage.SomeClass'
+    ---
+
+So the class name will be the same as the name used for the require (see the test testLoadAClassFromFile).
+
+
+Deprecated Features
+-------------------
+
+- "require 'Oop'" is deprecated, it will disapear in a future resease. Use "require 'Oop.Object'" and "require 'Oop.Class'" instead.
+
+- Anonymous class still exist as a convenience, but their purpose is now to be used localy. They might disapear in a future release.
