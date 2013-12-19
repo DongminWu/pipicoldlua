@@ -13,7 +13,7 @@ HeroModel=Object:subclass('HeroModel');
 
 
 function HeroModel:initialize()
-
+    LuaLog('HeroModel:initialize()')
     local o = {}
     setmetatable(o,self)
     self.__index =self

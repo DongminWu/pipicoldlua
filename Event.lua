@@ -24,9 +24,9 @@ end
 
 function Event:addEvent(eventname)
    --加一个Event到EventMap
-   LuaLog('Event:addEvent')
-   EventMap[eventname]=eventname
-   print(EventMap.eventname)
+   LuaLog('Event:addEvent ['..eventname..']')
+   EventMap[eventname]={}
+    --   print(EventMap[eventname])
 
 
 
@@ -34,18 +34,50 @@ function Event:addEvent(eventname)
 end
 
 
-function Event:sendEvent()
+function Event:sendEvent(eventname)
     --发送/触发一个Event
+    LuaLog('Event:sendEvent ['..eventname..']')
+    local v
+    local name='testevent'
+
+    for k,v in pairs(EventMap[eventname]) do
+--        print('value='..v)
+--        print(require (v))
+--        print('class name='..k)
+--        print('type='..type(v))
+        local listener=v:getInstance()
+        listener:onEnter()
+
+    end
+
+
 
 end
 
-function Event:addListener()
+function Event:addListener(eventname,listener)
    --添加一个事件监听器
 
+--    LuaLog('Event:addListener ['..eventname..'] listened by ['..listener..']('..EventListenerPath[listener]..')')
+    LuaLog('Event:addListener ['..eventname..'] ')
+--    print(listener)
+    table.insert(EventMap[eventname],listener)
+--    table.insert(EventMap[eventname],listener)
+
+
+
 end
 
-function Event:deleteEvent()
-   --删除一个事件从EventMap
-
+function Event:deleteEvent(eventname)
+     --删除一个事件从EventMap
+    EventMap[eventname]=nil
 
 end
+
+
+function Event:deleteListener(eventname,listener)
+
+    EventMap[eventname][listener]=nil
+
+end
+
+

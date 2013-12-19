@@ -18,21 +18,25 @@ require 'Event'
 local function main()
     LuaLog('Enter main()')
     print('hello, welcome to my world\n')
-
-
+    local ss=HeroModel:getInstance()
     showHeroModel()
 
     event=Event:getInstance()
-
     event:addEvent('aaa')
-
-
-
-
---    if readCommandLine()=='exit' then
---        print('bye~')
+    event:addListener('aaa',testevent)
+--    event:addListener('aaa','ccc')
+--    print (EventMap['aaa']['bbb'])
+--    event:deleteListener('aaa','ccc')
+--    print (EventMap['aaa']['ccc'])
+--    for k,v in pairs(EventMap['aaa']) do
+--
+--
+--        print (k,v)
+--
+--
 --    end
 
+    event:sendEvent('aaa')
 
 
 end

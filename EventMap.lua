@@ -6,9 +6,13 @@
 -- To change this template use File | Settings | File Templates.
 --
 
+
+
+
 EventMap={
 
-    TEST='TEST'
+
+    TEST={'AAA'},
 
 
 }
