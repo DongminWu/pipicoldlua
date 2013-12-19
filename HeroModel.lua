@@ -17,34 +17,16 @@ function HeroModel:initialize()
     local o = {}
     setmetatable(o,self)
     self.__index =self
-
     self:init()
-    print('HeroModel initialize  ' ..self.name)
-
     return o
 end
 --TODO !!!!
 local instance  ----为什么要这样写呢。。
 function HeroModel.class:getInstance()     ----.class is important!!!!!!!
-
-    print('HeroModel initialize1  ')
-
-    --[[if self.instance==nil then
-        print('HeroModel initialize2  ')
-
-        self.instance=self:new()
-        print('HeroModel initialize  ' ..self.instance.name)
-    end
-
-    return self.instance
-]]
+    LuaLog('HeroModel:getInstance()')
     if instance==nil then
-        print('HeroModel initialize2  ')
-
         instance=self:new()
-        print('HeroModel initialize  ' ..instance.name)
     end
-
     return instance
 end
 

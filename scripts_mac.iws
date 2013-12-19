@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54b751ea-8927-492e-beed-cb11f72c8cfc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controller.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Event.lua" afterPath="$PROJECT_DIR$/Event.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeroModel.lua" afterPath="$PROJECT_DIR$/HeroModel.lua" />
     </list>
     <ignored path="scripts_mac.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,16 +71,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.lua" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.lua" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="13" selection-start="492" selection-end="492" vertical-scroll-proportion="0.15923567">
+            <state line="46" column="13" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeroModel.lua" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HeroModel.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="22" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.lua" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="14" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.lua" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Controller.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="36" selection-start="155" selection-end="155" vertical-scroll-proportion="0.15286624">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,6 +121,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/main.lua" />
+        <option value="$PROJECT_DIR$/HeroModel.lua" />
+        <option value="$PROJECT_DIR$/Event.lua" />
       </list>
     </option>
   </component>
@@ -108,7 +139,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -393,7 +424,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="492" selection-end="492" vertical-scroll-proportion="0.15923567">
+        <state line="46" column="13" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HeroModel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="22" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="14" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="36" selection-start="155" selection-end="155" vertical-scroll-proportion="0.15286624">
           <folding />
         </state>
       </provider>

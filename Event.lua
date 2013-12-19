@@ -20,7 +20,7 @@ function Event.class:getInstance()
 	return instance
 end
 
-
+--TODO addEvent 不需要
 
 function Event:addEvent(eventname)
    --加一个Event到EventMap
