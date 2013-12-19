@@ -24,8 +24,9 @@ local function main()
     event=Event:getInstance()
     event:addEvent('aaa')
     event:addListener('aaa',testevent)
+--    event:deleteListener('aaa',testevent)
 --    event:addListener('aaa','ccc')
---    print (EventMap['aaa']['bbb'])
+--    print (EventMap['aaa'])
 --    event:deleteListener('aaa','ccc')
 --    print (EventMap['aaa']['ccc'])
 --    for k,v in pairs(EventMap['aaa']) do
@@ -36,7 +37,7 @@ local function main()
 --
 --    end
 
-    event:sendEvent('aaa')
+    event:sendEvent('aaa','hello world')
 
 
 end

@@ -2,16 +2,17 @@
 -- Created by IntelliJ IDEA.
 -- User: playcrab1
 -- Date: 13-12-19
--- Time: 上午11:58
+-- Time: 下午4:47
 -- To change this template use File | Settings | File Templates.
 --
+
 require 'Oop.Object'
 
-testevent=Object:subclass('testevent')
+testevent2=Object:subclass('testevent')
 
 
-function testevent.class:getInstance()
-    LuaLog('testevent:getInstance')
+function testevent2.class:getInstance()
+    LuaLog('testevent2:getInstance')
 
     local instance
     if instance ==nil then
@@ -24,14 +25,14 @@ function testevent.class:getInstance()
 end
 
 
-function testevent:onEnter(data)
+function testevent2:onEnter(data)
 
+
+    --TODO:接收传递过来的数据
     self.data=data
 
-    LuaLog('testevent:onEnter data: '..self.data)
+    LuaLog('testevent2:onEnter'..data)
 
 end
-
-
 
 
