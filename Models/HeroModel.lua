@@ -4,19 +4,21 @@ require 'GameInit'
 
 --hero class
 
-local Object = require 'Oop.Object'
+require 'Model'
 --local Class  = require 'Oop.Class'
 
-HeroModel=Object:subclass('HeroModel');
+HeroModel=Model:subclass('HeroModel');
 --HeroModel={}
 
 
 
 function HeroModel:initialize()
     LuaLog('HeroModel:initialize()')
-    local o = {}
-    setmetatable(o,self)
-    self.__index =self
+--    --[[local o = {}
+--    setmetatable(o,self)
+--    self.__index =self]]
+
+
     self:init()
     return o
 end
@@ -60,8 +62,46 @@ function HeroModel:init()
     self.imageUrl={}      --人物的图像资源路径
     self.soundUrl={}      --人物的音频资源路径
 
+    self.myHP=100
+
+
+
+    self.stand_img={'1.png',
+                   '2.png',
+                   '3.png',
+                   '4.png',
+                   '5.png',
+                   '6.png',
+                   '7.png',
+                   '8.png',
+                   '9.png',
+                   '10.png',
+                   '11.png',
+
+    }
 
 end
 
 
---function
+
+
+function HeroModel:getName()
+
+    return self.name
+
+end
+
+
+
+function HeroModel:getHP()
+
+    return self.myHP
+
+end
+
+
+function HeroModel:getStandImg()
+
+    return self.stand_img
+end
+

@@ -6,7 +6,7 @@
 -- To change this template use File | Settings | File Templates.
 --
 
-require 'Oop.Object'
+require 'Object'
 
 testevent2=Object:subclass('testevent')
 

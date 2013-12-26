@@ -1,8 +1,8 @@
 local pairs = pairs
 
-local bootstrap = require "Oop.bootstrap"
+local bootstrap = require "bootstrap"
 
-require 'Oop.Class'
+require 'Class'
 
 local Object = bootstrap.Object
 

@@ -5,7 +5,9 @@
 -- Time: 下午7:26
 -- To change this template use File | Settings | File Templates.
 --
-require 'Requires'
+require 'LuaLog'
+require 'LuaError'
+require 'Object'
 
 -- Event={}
 
@@ -20,7 +22,7 @@ require 'Requires'
 
    1.要新建一个lua脚本然后做成单例,入口函数是onEnter()  [参见:test.testevent.lua]
 
-   2.在Requires.lua中将其引用成为全局变量
+   2.在RequiresThings.lua中将其引用成为全局变量
 
    [---------
 

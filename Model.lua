@@ -1,15 +1,13 @@
 --
 -- Created by IntelliJ IDEA.
 -- User: playcrab1
--- Date: 13-12-19
--- Time: 上午10:44
+-- Date: 13-12-20
+-- Time: 上午11:45
 -- To change this template use File | Settings | File Templates.
 --
 
------Controller
-
-
-
 require 'Object'
 
-Controller=Object:subclass('Controller')
+Model=Object:subclass('Model')
+
+

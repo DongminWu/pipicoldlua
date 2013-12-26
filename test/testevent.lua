@@ -5,7 +5,7 @@
 -- Time: 上午11:58
 -- To change this template use File | Settings | File Templates.
 --
-require 'Oop.Object'
+require 'Object'
 
 testevent=Object:subclass('testevent')
 

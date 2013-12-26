@@ -1,4 +1,4 @@
-local bootstrap = require 'Oop.bootstrap'
+local bootstrap = require 'bootstrap'
 
 local Object = bootstrap.Object
 local Class  = bootstrap.Class
@@ -89,8 +89,8 @@ end
 function Class:reset()
     classes = {}
 
-    local Prototype       = require 'Oop.Prototype'
-    local bootstrap       = require 'Oop.bootstrap'
+    local Prototype       = require 'Prototype'
+    local bootstrap       = require 'bootstrap'
     local ObjectMetaclass = bootstrap['Object Metaclass']
     local ClassMetaclass  = bootstrap['Class Metaclass']
 
