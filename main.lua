@@ -14,7 +14,7 @@ require 'Requires'
 require 'RequireThings'
 
 
-local function main()
+function main()
     LuaLog('Enter main()')
 
 
@@ -75,11 +75,12 @@ local function main()
     ----初始化人物精灵end
 
     local layer=CCLayer:create()
+    local hero2ins=HeroPartView:getInstance()
 
+    hero2ins:onEnter()
 
-    hero2ins=HeroPartView:getInstance()
+    local hero2=hero2ins:BuildHero()
 
-    hero2=hero2ins:BuildHero()
 
     hero2:setPosition(visibleSize.width/2,visibleSize.height/2)
 

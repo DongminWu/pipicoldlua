@@ -53,15 +53,14 @@ require 'Object'
 
 
 Event=Object:subclass('Event')
-local instance
 function Event.class:getInstance()
 
 	LuaLog('Event:getInstance()')
-	if instance==nil then
-		instance=Event:new()
+	if Event_instance==nil then
+		Event_instance=Event:new()
 	end
 
-	return instance
+	return Event_instance
 end
 
 

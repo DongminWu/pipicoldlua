@@ -17,10 +17,9 @@
 --
 --------------
 
-require 'HeroModel'
- require 'Requires'
-require 'View'
 
+require 'Requires'
+require 'View'
 
 HeroPartView = View:subclass('HeroPartView')
 
@@ -28,31 +27,24 @@ HeroPartView = View:subclass('HeroPartView')
 
 
 function HeroPartView:initialize()
-   LuaLog('HeroModel:initialize()')
+   LuaLog('HeroPartView:initialize()')
 --   self.model=HeroModel:getInstance()
 
 end
 
 
-local instance
 function HeroPartView.class:getInstance()
     LuaLog('HeroPartView:getInstance')
-    if instance==nil then
-        instance=HeroPartView:new()
+    if HeroPartView_instance==nil then
+        HeroPartView_instance=HeroPartView:new()
     end
-
-    self.model = HeroModel:getInstance()
---    self:onEnter()
-
-    return instance
+    return HeroPartView_instance
 end
 
 function HeroPartView:onEnter(data)
 
     self:getEvent()
-    self.model = HeroModel:getInstance()
-
-
+    self.heromodel = HeroModel:getInstance()
 
 
 
@@ -66,7 +58,7 @@ end
 
 
 
-local function makeAnimate()
+ function HeroPartView:makeAnimate()
 
     local rect=CCRectMake(0,0,128,128)
 
@@ -78,7 +70,8 @@ local function makeAnimate()
 
     local animFrames=CCArray:create()
 
-    for _,v in pairs(stand_img) do
+
+    for _,v in pairs(self.heromodel.stand_img) do
 
          frames[i]=CCSpriteFrame:create(v,rect)
          animFrames:addObject(frames[i])
@@ -94,13 +87,13 @@ local function makeAnimate()
 end
 
 
-local function makeName()
+function HeroPartView:makeName()
 
-    local model=self.model
+    local model=self.heromodel
 
     local name=model:getName()
 
-    local nametext = CCLableTTF:create(name,'微软雅黑',12)
+    local nametext = CCLabelTTF:create(name,'微软雅黑',12)
 
     return nametext
 
@@ -114,17 +107,19 @@ function HeroPartView:BuildHero(status)
 
     local hero =CCSprite:create()
 
-    local text = makeName()
+    local text = self:makeName()
 
 
 
     hero:addChild(text)
 
-    text:setPosition(hero:getContentSize().width/2,hero:getContentSize().height/2)
+    pipicold('hero:getContentSize().width='..hero:getContentSize().width)
 
-    hero:runAction(CCRepeatForever:create(makeAnimate()))
+    text:setPosition(64,0)
 
-    return runAciton
+    hero:runAction(CCRepeatForever:create(self:makeAnimate()))
+
+    return hero
 
 
 end

@@ -23,13 +23,14 @@ function HeroModel:initialize()
     return o
 end
 --TODO !!!!
-local instance  ----为什么要这样写呢。。
+
 function HeroModel.class:getInstance()     ----.class is important!!!!!!!
     LuaLog('HeroModel:getInstance()')
-    if instance==nil then
-        instance=self:new()
+
+    if HeroModel_instance==nil then
+        HeroModel_instance=HeroModel:new()
     end
-    return instance
+    return  HeroModel_instance
 end
 
 

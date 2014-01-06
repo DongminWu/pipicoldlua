@@ -20,3 +20,4 @@ require 'TextGameMainView'
 
 --test
 require 'testevent'
+
