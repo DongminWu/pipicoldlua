@@ -67,21 +67,21 @@ Class = {__prototype__ = delegated(objectPrototype)}
 
 -- ObjectMetaclass is an instance of Class
 local ObjectMetaclass = basicNew(Class)
-ObjectMetaclass.__name__ = 'Oop.Object Metaclass'
+ObjectMetaclass.__name__ = 'scripts/Oop/Object Metaclass'
 -- ObjectMetaclass is a subclass of Class
 setSuperclass(ObjectMetaclass, Class)
 
 -- Class instances have the method basicNew
 Class.__prototype__.basicNew = basicNew
 Class.__prototype__.setSuperclass = setSuperclass
-Class.__name__ = 'Oop.Class'
+Class.__name__ = 'scripts/Oop/Class'
 
 -- Object is an instance of ObjectMetaclass
 Object = ObjectMetaclass:basicNew()
 
 -- Class is a superclass of Object (2/2)
 Object.__prototype__ = objectPrototype
-Object.__name__ = 'Oop.Object'
+Object.__name__ = 'scripts/Oop/Object'
 Class.superclass = Object
 
 -- ClassMetaclass is an instance of Class
@@ -91,7 +91,7 @@ ClassMetaclass:setSuperclass(ObjectMetaclass)
 
 -- Class is an instance of ClassMetaclass (crossed reference)
 ClassMetaclass.__prototype__.__index = ClassMetaclass.__prototype__
-ClassMetaclass.__name__ = 'Oop.Class Metaclass'
+ClassMetaclass.__name__ = 'scripts/Oop/Class Metaclass'
 setmetatable(Class, ClassMetaclass.__prototype__)
 Class.class = ClassMetaclass
 

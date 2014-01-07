@@ -1,4 +1,4 @@
-local Object = require 'Oop.Object'
+local Object = require 'Oop/Object'
 
 local SomeClass = Object:subclass(...)
 

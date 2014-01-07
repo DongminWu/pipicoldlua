@@ -5,6 +5,6 @@
 -- Time: 下午12:03
 -- To change this template use File | Settings | File Templates.
 --
-require 'Object'
+require 'scripts/Oop/Object'
 
 View =Object:subclass('View')

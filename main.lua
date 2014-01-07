@@ -9,9 +9,9 @@ function __G__TRACKBACK__(msg)
     print(debug.traceback())
     print("----------------------------------------")
 end]]
-
-require 'Requires'
-require 'RequireThings'
+require 'scripts/Requires'
+require 'scripts/RequireThings'
+print('hello')
 
 
 function main()

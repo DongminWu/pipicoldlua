@@ -1,5 +1,5 @@
-local Object = require 'Oop.Object'
-local Class  = require 'Oop.Class'
+local Object = require 'Oop/Object'
+local Class  = require 'Oop/Class'
 
 TestObjectImplementation = {}
 

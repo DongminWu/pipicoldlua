@@ -6,7 +6,7 @@
 -- To change this template use File | Settings | File Templates.
 --
 
-require 'Object'
+require 'scripts/Oop/Object'
 
 Model=Object:subclass('Model')
 

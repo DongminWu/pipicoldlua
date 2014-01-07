@@ -1,4 +1,4 @@
-'''Object.lua, a table for OOP.'''
+'''Object.lua, a table for Oop/'''
 
 This is a small project I've been working on to explore object-oriented programming (OOP) from the implementation perspective. Its goal is to provide Lua with minimal and reusable OOP, as well as to be easily predictable and extensible. --SebastienRoccaSerra
 

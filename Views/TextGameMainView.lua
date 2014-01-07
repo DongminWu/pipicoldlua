@@ -7,8 +7,8 @@
 --
 
 
-require 'Requires'
-require 'View'
+require 'scripts/Requires'
+require 'scripts/View'
 
 
 

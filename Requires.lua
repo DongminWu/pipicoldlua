@@ -1,15 +1,15 @@
 --------各种系统框架部分
-require 'LuaLog'
-require 'LuaError'
-require 'GameInit'
+require 'scripts/LuaLog'
+require 'scripts/LuaError'
+require 'scripts/GameInit'
 
 --event
-require 'Event'
-require 'EventMap'
+require 'scripts/Event'
+require 'scripts/EventMap'
 --require 'EventListenerPath'
 
 --mvc
-require 'Model'
-require 'View'
-require 'Controller'
+require 'scripts/Model'
+require 'scripts/View'
+require 'scripts/Controller'
 

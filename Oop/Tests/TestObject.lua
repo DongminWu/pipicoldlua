@@ -3,14 +3,14 @@
 --  Get Object.lua at http://lua-users.org/wiki/ObjectLua
 --
 
-local Object = require 'Oop.Object'
-local Class  = require 'Oop.Class'
+local Object = require 'Oop/Object'
+local Class  = require 'Oop/Class'
 
 TestObject = {}
 
 function TestObject:tearDown()
     Class:reset()
-    package.loaded['Oop.Tests.SomeClass'] = nil
+    package.loaded['Oop/Tests.SomeClass'] = nil
 end
 
 
@@ -457,11 +457,11 @@ function TestObject:testAllClasses()
 
     local classes = Class:all()
 
-    assertEquals(classes['Oop.Object']:name(), 'Oop.Object')
-    assertEquals(classes['Oop.Object Metaclass']:name(), 'Oop.Object Metaclass')
+    assertEquals(classes['Oop/Object']:name(), 'Oop/Object')
+    assertEquals(classes['Oop/Object Metaclass']:name(), 'Oop/Object Metaclass')
 
-    assertEquals(classes['Oop.Class']:name(), 'Oop.Class')
-    assertEquals(classes['Oop.Class Metaclass']:name(), 'Oop.Class Metaclass')
+    assertEquals(classes['Oop/Class']:name(), 'Oop/Class')
+    assertEquals(classes['Oop/Class Metaclass']:name(), 'Oop/Class Metaclass')
 
     assertEquals(classes['NamedClass']:name(), 'NamedClass')
     assertEquals(classes['NamedClass Metaclass']:name(), 'NamedClass Metaclass')
@@ -470,21 +470,21 @@ end
 ----
 --  Testing requiring a class file
 function TestObject:testLoadAClassFromFile()
-    local SomeClass = require 'Oop.Tests.SomeClass'
+    local SomeClass = require 'Oop/Tests.SomeClass'
 
     local someObject = SomeClass:new()
-    assertEquals(someObject:className(), 'Oop.Tests.SomeClass')
+    assertEquals(someObject:className(), 'Oop/Tests.SomeClass')
     assert(someObject:itWorks())
 end
 
 function TestObject:testClassShadowedFails1()
-    Object:subclass 'Oop.Tests.SomeClass'
-    assertError(require, 'Oop.Tests.SomeClass')
+    Object:subclass 'Oop/Tests.SomeClass'
+    assertError(require, 'Oop/Tests.SomeClass')
 end
 
 function TestObject:testClassShadowedFails2()
-    require 'Oop.Tests.SomeClass'
+    require 'Oop/Tests.SomeClass'
     assertError(function()
-                    Object:subclass 'Oop.Tests.SomeClass'
+                    Object:subclass 'Oop/Tests.SomeClass'
                 end)
 end

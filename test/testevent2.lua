@@ -6,7 +6,7 @@
 -- To change this template use File | Settings | File Templates.
 --
 
-require 'Object'
+require 'script/Oop/Object'
 
 testevent2=Object:subclass('testevent')
 

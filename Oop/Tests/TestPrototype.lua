@@ -2,7 +2,7 @@
 -- Tested with Lua 5.1.3
 --
 
-local Prototype = require 'Oop.Prototype'
+local Prototype = require 'Oop/Prototype'
 
 TestPrototype = {}
 

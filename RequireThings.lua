@@ -9,15 +9,16 @@
 
 ------------具体实现
 --models
-require 'HeroModel'
-require 'HeroPartView'
+require 'scripts/Models/HeroModel'
+require 'scripts/Views/HeroPartView'
+print('eieiei')
 
 
 --view
-require 'TextGameMainView'
+require 'scripts/Views/TextGameMainView'
 
 
 
 --test
-require 'testevent'
+require 'scripts/test/testevent'
 

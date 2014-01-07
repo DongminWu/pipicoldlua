@@ -5,9 +5,9 @@
 -- Time: 下午7:26
 -- To change this template use File | Settings | File Templates.
 --
-require 'LuaLog'
-require 'LuaError'
-require 'Object'
+require 'scripts/LuaLog'
+require 'scripts/LuaError'
+require 'scripts/Oop/Object'
 
 -- Event={}
 

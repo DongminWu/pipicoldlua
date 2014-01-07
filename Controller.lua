@@ -10,6 +10,6 @@
 
 
 
-require 'Object'
+require 'scripts/Oop/Object'
 
 Controller=Object:subclass('Controller')

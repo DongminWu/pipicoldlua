@@ -1,11 +1,11 @@
-require 'GameInit'
+require 'scripts/GameInit'
 
 
 
 --hero class
 
-require 'Model'
---local Class  = require 'Oop.Class'
+require 'scripts/Model'
+--local Class  = require 'Oop/Class'
 
 HeroModel=Model:subclass('HeroModel');
 --HeroModel={}
@@ -67,17 +67,17 @@ function HeroModel:init()
 
 
 
-    self.stand_img={'1.png',
-                   '2.png',
-                   '3.png',
-                   '4.png',
-                   '5.png',
-                   '6.png',
-                   '7.png',
-                   '8.png',
-                   '9.png',
-                   '10.png',
-                   '11.png',
+    self.stand_img={'images/reimu/stand/1.png',
+                   'images/reimu/stand/2.png',
+                   'images/reimu/stand/3.png',
+                   'images/reimu/stand/4.png',
+                   'images/reimu/stand/5.png',
+                   'images/reimu/stand/6.png',
+                   'images/reimu/stand/7.png',
+                   'images/reimu/stand/8.png',
+                   'images/reimu/stand/9.png',
+                   'images/reimu/stand/10.png',
+                   'images/reimu/stand/11.png',
 
     }
 

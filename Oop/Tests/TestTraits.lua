@@ -1,7 +1,7 @@
 require 'Oop'
 
-local Object = Oop.Object
-local Trait  = Oop.Trait
+local Object = Oop/Object
+local Trait  = Oop/Trait
 
 TestTraits = {}
 
