@@ -81,6 +81,28 @@ function HeroModel:init()
 
     }
 
+    self.walk_forward_img={
+        'images/reimu/walk_forward/1.png',
+        'images/reimu/walk_forward/2.png',
+        'images/reimu/walk_forward/3.png',
+        'images/reimu/walk_forward/4.png',
+        'images/reimu/walk_forward/5.png',
+        'images/reimu/walk_forward/6.png',
+        'images/reimu/walk_forward/7.png',
+
+    }
+
+    self.walk_back_img={
+        'images/reimu/walk_back/1.png',
+        'images/reimu/walk_back/2.png',
+        'images/reimu/walk_back/3.png',
+        'images/reimu/walk_back/4.png',
+        'images/reimu/walk_back/5.png',
+        'images/reimu/walk_back/6.png',
+        'images/reimu/walk_back/7.png',
+        'images/reimu/walk_back/8.png',
+    }
+
 end
 
 
@@ -104,5 +126,13 @@ end
 function HeroModel:getStandImg()
 
     return self.stand_img
+end
+
+function HeroModel.getWalkForward()
+    return self.walk_forward
+end
+
+function HeroModel.getWalkBack()
+    return self.walk_back
 end
 
