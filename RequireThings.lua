@@ -10,12 +10,11 @@
 ------------具体实现
 --models
 require 'scripts/Models/HeroModel'
-require 'scripts/Views/HeroPartView'
-print('eieiei')
 
 
 --view
 require 'scripts/Views/TextGameMainView'
+require 'scripts/Views/HeroPartView'
 
 
 

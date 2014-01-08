@@ -42,7 +42,7 @@ function HeroPartView.class:getInstance()
 end
 
 function HeroPartView:onEnter(data)
-
+    LuaLog('HeroPartView:onEnter()')
     self:getEvent()
     self.heromodel = HeroModel:getInstance()
 
@@ -58,31 +58,90 @@ end
 
 
 
- function HeroPartView:makeAnimate()
+ function HeroPartView:makeAnimate(state)   --输入值：state=判断是走路还是站立等状态
+
+     --把当载入hero的时候把它的所有动画都载入进来
 
     local rect=CCRectMake(0,0,128,128)
 
     --local stand_img = self.model:getStandImg()
 
+
+
+    --TODO：stand anim start
+
     local i=1
-
-    local frames={}
-
-    local animFrames=CCArray:create()
+    local framesStand={}
+    local animFramesStand=CCArray:create()
 
 
     for _,v in pairs(self.heromodel.stand_img) do
 
-         frames[i]=CCSpriteFrame:create(v,rect)
-         animFrames:addObject(frames[i])
+         framesStand[i]=CCSpriteFrame:create(v,rect)
+         animFramesStand:addObject(framesStand[i])
 
     end
 
-    local animation =CCAnimation:createWithSpriteFrames(animFrames,0.1)
+    local animationStand =CCAnimation:createWithSpriteFrames(animFramesStand,0.1)
 
-    local animate = CCAnimate:create(animation)
+    self.animateStand = CCAnimate:create(animationStand)
+   --stand anim end
 
-    return animate
+
+    --TODO:walk forward anim start
+    i=1
+
+    local framesWalkForward={}
+    local animFramesWalkForward=CCArray:create()
+
+
+    for _,v in pairs(self.heromodel.walk_forward_img) do
+
+        framesWalkForward[i]=CCSpriteFrame:create(v,rect)
+        animFramesWalkForward:addObject(framesWalkForward[i])
+
+    end
+
+    local animationWalkForward =CCAnimation:createWithSpriteFrames(animFramesWalkForward,0.1)
+
+    self.animateWalkForward = CCAnimate:create(animationWalkForward)
+
+    --walk forward anim end
+
+
+
+    --TODO:walk back anim start
+    i=1
+
+    local framesWalkBack={}
+    local animFramesWalkBack=CCArray:create()
+
+
+    for _,v in pairs(self.heromodel.walk_back_img) do
+
+        framesWalkBack[i]=CCSpriteFrame:create(v,rect)
+        animFramesWalkBack:addObject(framesWalkBack[i])
+
+    end
+
+    local animationWalkBack =CCAnimation:createWithSpriteFrames(animFramesWalkBack,0.1)
+
+    self.animateWalkBack = CCAnimate:create(animationWalkBack)
+
+    --walk back anim end
+
+
+
+   --TODO 根据不同的选择返回不同的不同的动画
+
+    if state=='stand' then
+        return self.animationStand
+    elseif state=='walk_forward' then
+        return self.animateWalkForward
+    elseif state=='walk_back' then
+        return self.animateWalkBack
+    end
+
 
 end
 
@@ -93,7 +152,7 @@ function HeroPartView:makeName()
 
     local name=model:getName()
 
-    local nametext = CCLabelTTF:create(name,'微软雅黑',12)
+    local nametext = CCLabelTTF:create(name,'fonts/fangzheng.ttf',12)
 
     return nametext
 
@@ -101,25 +160,36 @@ function HeroPartView:makeName()
 end
 
 
-function HeroPartView:BuildHero(status)
+function HeroPartView:BuildHero()
+    LuaLog('HeroPartView:BuildHero()')
+
+
+    self.hero =CCSprite:create()
+
+    self.heroNameText = self:makeName()
 
 
 
-    local hero =CCSprite:create()
-
-    local text = self:makeName()
+    self.hero:addChild(self.heroNameText)
 
 
+    self.heroNameText:setPosition(48,0)
+    local inithero=self.hero
+    pipicold('hero:getContentSize().width='..self.hero:getContentSize().width)
+    inithero:runAction(CCRepeatForever:create(self:makeAnimate('stand')))
+    print('pipicoldtest'..tostring(self.hero))
 
-    hero:addChild(text)
+    return self.hero
 
-    pipicold('hero:getContentSize().width='..hero:getContentSize().width)
 
-    text:setPosition(64,0)
+end
 
-    hero:runAction(CCRepeatForever:create(self:makeAnimate()))
 
-    return hero
+function HeroPartView:ChangeAction(action)
+
+    LuaLog('HeroPartView:ChangeAction()')
+    self.hero:runAction(CCRepeatForever:create(self:makeAnimate('walk_forward')))
+
 
 
 end
