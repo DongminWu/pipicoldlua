@@ -63,13 +63,22 @@
     <favorites_list name="scripts_win32" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52951545">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
+          <file leaf-file-name="HeroModel.lua" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Models/HeroModel.lua">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="70" column="18" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0" vertical-offset="1079" max-vertical-offset="2755">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="testevent.lua" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/testevent.lua">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="30" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="817">
+                <state line="7" column="21" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="817">
                   <folding />
                 </state>
               </provider>
@@ -87,16 +96,16 @@
           <file leaf-file-name="HeroPartView.lua" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Views/HeroPartView.lua">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="177" column="57" selection-start="3341" selection-end="3362" vertical-scroll-proportion="0.5263158" vertical-offset="3053" max-vertical-offset="3952">
+                <state line="188" column="51" selection-start="3580" selection-end="3580" vertical-scroll-proportion="0.7096774" vertical-offset="3154" max-vertical-offset="3914">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Event.lua" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Event.lua">
+          <file leaf-file-name="TextGameMainView.lua" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Views/TextGameMainView.lua">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="54" column="17" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="2565">
+                <state line="10" column="16" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1140">
                   <folding />
                 </state>
               </provider>
@@ -123,16 +132,16 @@
           <file leaf-file-name="Requires.lua" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Requires.lua">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="23" selection-start="34" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+                <state line="1" column="23" selection-start="34" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="399">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HeroModel.lua" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Models/HeroModel.lua">
+          <file leaf-file-name="main.lua" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main.lua">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="52" column="35" selection-start="823" selection-end="823" vertical-scroll-proportion="-5.814815" vertical-offset="831" max-vertical-offset="2736">
+                <state line="60" column="30" selection-start="333" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="1786" max-vertical-offset="2945">
                   <folding />
                 </state>
               </provider>
@@ -141,7 +150,7 @@
           <file leaf-file-name="RequireThings.lua" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/RequireThings.lua">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+                <state line="16" column="22" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="551">
                   <folding />
                 </state>
               </provider>
@@ -151,19 +160,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="HeroModel.lua" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Models/HeroModel.lua">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="98" column="13" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0" vertical-offset="1453" max-vertical-offset="2736">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="main.lua" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.lua">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="89" column="6" selection-start="2380" selection-end="2380" vertical-scroll-proportion="0.47994056" vertical-offset="1368" max-vertical-offset="2945">
+                <state line="86" column="9" selection-start="2282" selection-end="2287" vertical-scroll-proportion="0.70579493" vertical-offset="1159" max-vertical-offset="2945">
                   <folding />
                 </state>
               </provider>
@@ -192,10 +192,10 @@
         <option value="$PROJECT_DIR$/test/testevent.lua" />
         <option value="$PROJECT_DIR$/test/testevent2.lua" />
         <option value="$PROJECT_DIR$/Views/TextGameMainView.lua" />
-        <option value="$PROJECT_DIR$/Models/HeroModel.lua" />
         <option value="$PROJECT_DIR$/RequireThings.lua" />
-        <option value="$PROJECT_DIR$/main.lua" />
+        <option value="$PROJECT_DIR$/Models/HeroModel.lua" />
         <option value="$PROJECT_DIR$/Views/HeroPartView.lua" />
+        <option value="$PROJECT_DIR$/main.lua" />
       </list>
     </option>
   </component>
@@ -229,6 +229,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -305,7 +306,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -317,7 +317,6 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -354,6 +353,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -379,19 +391,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -510,7 +509,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14274925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1691843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -541,51 +540,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Views/TextGameMainView.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="175" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Oop/Object.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="48" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="722">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Requires.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="34" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="399">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="333" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="2888">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequireThings.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/HeroModel.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="3" selection-start="2709" selection-end="2709" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2736">
+        <state line="136" column="3" selection-start="2709" selection-end="2709" vertical-scroll-proportion="0.0" vertical-offset="1763" max-vertical-offset="2736">
           <folding />
         </state>
       </provider>
@@ -807,6 +764,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Event.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="20" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controller.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="20" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
@@ -817,6 +781,13 @@
     <entry file="file://$PROJECT_DIR$/Oop/Class.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2109">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testevent.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="817">
           <folding />
         </state>
       </provider>
@@ -849,27 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/HeroModel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="35" selection-start="823" selection-end="823" vertical-scroll-proportion="-5.814815" vertical-offset="831" max-vertical-offset="2736">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testevent.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="30" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="817">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequireThings.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Requires.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="23" selection-start="34" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
@@ -877,23 +827,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Event.lua">
+    <entry file="file://$PROJECT_DIR$/RequireThings.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="17" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="2565">
+        <state line="16" column="22" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="551">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/HeroModel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="18" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0" vertical-offset="1079" max-vertical-offset="2755">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="6" selection-start="2380" selection-end="2380" vertical-scroll-proportion="0.47994056" vertical-offset="1368" max-vertical-offset="2945">
+        <state line="60" column="30" selection-start="333" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="1786" max-vertical-offset="2945">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/HeroPartView.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="57" selection-start="3341" selection-end="3362" vertical-scroll-proportion="0.5263158" vertical-offset="3053" max-vertical-offset="3952">
+        <state line="188" column="51" selection-start="3580" selection-end="3580" vertical-scroll-proportion="0.7096774" vertical-offset="3154" max-vertical-offset="3914">
           <folding />
         </state>
       </provider>

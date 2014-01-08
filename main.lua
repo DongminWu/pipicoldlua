@@ -18,8 +18,8 @@ function main()
     LuaLog('Enter main()')
 
 --
---    local visibleSize = CCDirector:sharedDirector():getVisibleSize()
---    local origin = CCDirector:sharedDirector():getVisibleOrigin()
+    local visibleSize = CCDirector:sharedDirector():getVisibleSize()
+    local origin = CCDirector:sharedDirector():getVisibleOrigin()
 --
 --
 --    print(tostring(visibleSize.width))
@@ -86,7 +86,7 @@ function main()
 
     hero2:setPosition(visibleSize.width/2,visibleSize.height/2)
 
---    hero2:ChangeAction()
+    hero2ins:ChangeAction()
     layer:addChild(hero2)
 
 

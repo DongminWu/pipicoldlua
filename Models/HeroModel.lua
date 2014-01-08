@@ -67,7 +67,8 @@ function HeroModel:init()
 
 
 
-    self.stand_img={'images/reimu/stand/1.png',
+    self.stand_img={
+                   'images/reimu/stand/1.png',
                    'images/reimu/stand/2.png',
                    'images/reimu/stand/3.png',
                    'images/reimu/stand/4.png',

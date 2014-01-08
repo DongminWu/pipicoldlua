@@ -135,7 +135,7 @@ end
    --TODO 根据不同的选择返回不同的不同的动画
 
     if state=='stand' then
-        return self.animationStand
+        return self.animateStand
     elseif state=='walk_forward' then
         return self.animateWalkForward
     elseif state=='walk_back' then
@@ -164,22 +164,20 @@ function HeroPartView:BuildHero()
     LuaLog('HeroPartView:BuildHero()')
 
 
-    self.hero =CCSprite:create()
+    self.heroPart =CCSprite:create()
 
-    self.heroNameText = self:makeName()
-
-
-
-    self.hero:addChild(self.heroNameText)
+    self.heroPartNameText = self:makeName()
 
 
-    self.heroNameText:setPosition(48,0)
-    local inithero=self.hero
-    pipicold('hero:getContentSize().width='..self.hero:getContentSize().width)
-    inithero:runAction(CCRepeatForever:create(self:makeAnimate('stand')))
-    print('pipicoldtest'..tostring(self.hero))
 
-    return self.hero
+    self.heroPart:addChild(self.heroPartNameText)
+
+
+    self.heroPartNameText:setPosition(64,0)
+    local makeanimate=self:makeAnimate('stand')
+    local action=CCRepeatForever:create(makeanimate)
+    self.heroPart:runAction(action)
+    return self.heroPart
 
 
 end
@@ -188,7 +186,7 @@ end
 function HeroPartView:ChangeAction(action)
 
     LuaLog('HeroPartView:ChangeAction()')
-    self.hero:runAction(CCRepeatForever:create(self:makeAnimate('walk_forward')))
+    self.heroPart:runAction(CCRepeatForever:create(self.animateWalkForward))
 
 
 
