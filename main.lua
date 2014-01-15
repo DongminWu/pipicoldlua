@@ -89,11 +89,28 @@ function main()
     hero2ins:ChangeAction()
     layer:addChild(hero2)
 
+    function callback()
+        LuaLog('按下按钮')
 
+    end
+--
+--    local layer2=CCLayer:create()
+--    local menuitem=   CCMenuItemFont:create('上')
+--    menuitem:setPosition(0,0)
+--    menuitem:registerScriptTapHandler(callback)
+--   local menu=  CCMenu:create()
+--    menu:addChild(menuitem)
+--    menu:setPosition(origin.x+menuitem:getContentSize().width, origin.y+menuitem:getContentSize().width)
+--    layer2:addChild(menu)
+    local menuins=ControlView:getInstance()
 
+    local layer2=menuins:BuildControlPanel()
+
+    layer2:setPosition(0,0)
     ----添加场景 start
     local sceneGame = CCScene:create()
-    sceneGame:addChild(layer)
+--    sceneGame:addChild(layer)
+    sceneGame:addChild(layer2)
 
     CCDirector:sharedDirector():runWithScene(sceneGame)
     ----添加场景 end

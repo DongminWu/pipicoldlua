@@ -15,7 +15,7 @@ require 'scripts/Models/HeroModel'
 --view
 require 'scripts/Views/TextGameMainView'
 require 'scripts/Views/HeroPartView'
-
+require 'scripts/Views/ControlView'
 
 
 --test
